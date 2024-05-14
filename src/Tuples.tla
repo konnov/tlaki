@@ -4,6 +4,8 @@
  * which resolve ambiguity between various versions of <<...>>.
  *
  * Igor Konnov, 2024.
+ *
+ * Subject to Apache 2.0. See LICENSE.
  *)
 
 (**

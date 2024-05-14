@@ -86,6 +86,16 @@ At(lst, i) ==
     lst.es[1 + i]
 
 (**
+ * Replace the element at index `i` such that `0 <= i < Len(lst)`.
+ * The new element value equals to `e`.
+ * If the index is out of bounds, the resulting list is equal to the input.
+ *
+ * @type: ({ es: Seq(a) }, Int, a) => { es: Seq(a) };
+ *)
+SetAt(lst, i, e) ==
+    [ es |-> [ lst EXCEPT ![1 + i] = e ] ]
+
+(**
  * Get the list that contains all the elements of the input list
  * (in the original order)
  * whose indices belong to the range `start <= i < end_exclusive`.
