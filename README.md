@@ -34,7 +34,7 @@ Concat(List(<<2, 3>>), List(<<5, 6>>)) = List(<<2, 3, 5, 6>>)
 <<5, 6>>
 <<1, 2, 3>>
 
-\* with Tuples: a triple that is a definitely annotated as a tuple
+\* with Tuples: a triple that is definitely annotated as a tuple
 Pair(5, 6)
 T2(5, 6)
 T3(1, 2, 3)
