@@ -19,8 +19,31 @@ They can, [Lists.tla][] contains definitions like that. To avoid name collisions
 with [TLA+ Sequences][], we use alternative names that you can find in
 programming languages.
 
-*What is TLAki?* [tee-el-ay-kee]. In my mother tongue, the suffix
-'-ki' usually points to little or cute things, animals, or people. Like, in
+## Examples
+
+```tla
+\* with Sequences
+<<1, 2, 3>>[2] = 2
+<<2, 3>> \o <<5, 6>> = <<2, 3, 5, 6>>
+
+\* with Lists
+At(List(<<1, 2, 3>>), 1) = 2
+Concat(List(<<2, 3>>), List(<<5, 6>>)) = List(<<2, 3, 5, 6>>)
+
+\* standard TLA+: a triple is also a sequence
+<<5, 6>>
+<<1, 2, 3>>
+
+\* with Tuples: a triple that is a definitely annotated as a tuple
+Pair(5, 6)
+T2(5, 6)
+T3(1, 2, 3)
+```
+
+## Name
+
+How to pronounce TLAki? [tee-el-ay-kee]. In my mother tongue, the suffix '-ki'
+usually points to little or cute things, animals, or people. Like, in
 [Pirozhki][].
 
 [TLA+ Community Modules]: https://github.com/tlaplus/CommunityModules
