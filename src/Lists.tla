@@ -17,7 +17,7 @@ LOCAL INSTANCE Apalache
  *
  * @typeAlias: list = { es: Seq(a) };
  *)
-LOCAL Lists_alises == TRUE
+Lists_aliases == TRUE
 
 (**
  * Construct a list by providing a sequence of its elements.
@@ -93,7 +93,7 @@ At(lst, i) ==
  * @type: ({ es: Seq(a) }, Int, a) => { es: Seq(a) };
  *)
 SetAt(lst, i, e) ==
-    [ es |-> [ lst EXCEPT ![1 + i] = e ] ]
+    [ es |-> [ lst.es EXCEPT ![1 + i] = e ] ]
 
 (**
  * Get the list that contains all the elements of the input list
